@@ -1,6 +1,5 @@
 module.exports = function(grunt) {
-  var ui_src = ['ui/src/**/*.js'],
-      server_src = ['server/src/**/*.js'];
+  var ui_src = ['ui/src/**/*.js'];
 
   // Project configuration.
   grunt.initConfig({
@@ -12,25 +11,9 @@ module.exports = function(grunt) {
         quoteStyle: 1,
         mangle: {
           except: ['angular']
-        }
-      },
-      ui: {
-        files: {
-           'dist/<%= pkg.name %>.min.js': ui_src
-        }
-      },
-      server: {
-        files: {
-           'dist/<%= pkg.name %>-server.min.js': server_src
-        }
-      },
-      debug: {
-        options : {
-          beautify: true
         },
         files: {
-           'debug/<%= pkg.name %>.js': ui_src,
-           'debug/<%= pkg.name %>-server.js': server_src
+           'dist/<%= pkg.name %>.min.js': ui_src
         }
       }
     },
@@ -38,7 +21,7 @@ module.exports = function(grunt) {
       options: {
         force: true,
         reporter: require('jshint-stylish'),
-        all: ['Gruntfile.js', 'ui/src/**/*.js', 'server/src/**/*.js']
+        all: ['Gruntfile.js'].concat(ui_src)
       }
     }
   });
