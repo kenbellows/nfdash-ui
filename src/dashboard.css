@@ -1,3 +1,4 @@
+/* wrapper styles */
 #nfdash-wrapper {
   position: absolute;
   top: 0;
@@ -9,6 +10,38 @@
   height: 100%;
 }
 
+/* sidebar styles */
 #nfdash-sidebar {
   background: #ccc;
+  padding: 0;
+}
+#nfdash-sidebar .flexywexy {
+  margin: 0;
+  padding: 0;
+  height: 100%;
+
+  flex-direction: column;
+  justify-content: center;
+  align-items: stretch;
+  flex-wrap: wrap;
+}
+#nfdash-sidebar .flexywexy a {
+  background: #259;
+  color: #952;
+  text-align: center;
+  
+
+  /* flexbox properties */
+}
+
+/* main content styles */
+#nfdash-content h1 {
+  font-size: 2em;
+}
+
+
+/* general styles */
+.flexywexy {
+  display: flex;
+  display: -webkit-flex; /* Safari 6.1+. iOS 7.1+, BB10 */
 }
