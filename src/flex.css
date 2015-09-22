@@ -1,0 +1,23 @@
+html, body {
+height: 100%;
+}
+
+
+.parent {
+  display: flex;
+  width: 75%;
+  height: 80%;
+  margin: 2em auto;
+  border: 2px dotted coral;
+  flex-column: row;
+}
+
+.child:first-child {
+  background: lightseagreen;
+  width:20%;
+}
+.child:last-child {
+  background:darkseagreen;
+  flex-grow: 1;
+}
+

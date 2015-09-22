@@ -10,18 +10,14 @@
 </head>
 <body ng-app="nfdash.main" ng-controller="mainController as nfmain">
     
-  <div class="container-fluid" id="nfdash-wrapper">
-    <div class="row">
-      <!-- sidebar -->
-      <div class="col-sm-3" id="nfdash-sidebar">
-        <ng-include src="'partials/sidebar.html'"></ng-include>
-      </div>
+  <!-- sidebar -->
+  <div id="nfdash-sidebar">
+    <ng-include src="'partials/sidebar.html'"></ng-include>
+  </div>
 
-      <!-- main content pane -->
-      <div class="col-sm-9" id="nfdash-content">
-        <div ng-viewport></div>
-      </div>
-    </div>
+  <!-- main content pane -->
+  <div id="nfdash-content">
+    <div ng-viewport></div>
   </div>
 
   <script src="//cdnjs.cloudflare.com/ajax/libs/moment.js/2.10.6/moment.min.js"></script>

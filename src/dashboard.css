@@ -1,21 +1,22 @@
-/* wrapper styles */
-#nfdash-wrapper {
-  position: absolute;
-  top: 0;
-  bottom: 0;
-}
-#nfdash-wrapper>.row,
-#nfdash-sidebar,
-#nf-dash-content {
+html, body {
   height: 100%;
+}  
+body {
+  display: flex;
+  flex-direction: row;
 }
+
 
 /* sidebar styles */
 #nfdash-sidebar {
+  width: 250px;
   background: #222;
-  padding: 1em;;
+  padding: 1em;
   font-family: "Roboto","Helvetica Neue",Arial,sans-serif;
   font-weight: 200;
+  
+  display: flex;
+  flex-direction: column;
 }
 #nfdash-sidebar header {
   padding: 1em;
@@ -27,52 +28,49 @@
   font-size: 18pt;
   font-family: "Roboto","Helvetica Neue",Arial,sans-serif;
 }
-
 #nfdash-sidebar .picturebox {
   padding-bottom: 2em;
   border-bottom: 1px dotted #ccc;
 }
-
 #nfdash-sidebar .picturebox img {
   width: 50%;
 }
-
 #nfdash-sidebar #links {
   margin: 0;
-  margin-left: 2em;
   padding: 0;
   height: 100%;
   padding-top: 1em;
 }
-
 #nfdash-sidebar #links a {
   color: #ccc;
   text-align: left;
   line-height: 2em;
 
   display: block;
-  width: 100%;
   padding: 1em;
 
   font-size: 14pt;
 }
-
 #nfdash-sidebar #links a i {
   font-size: 2em;
   margin-right: 1em;
   vertical-align: bottom;
 }
 
+
 /* main content styles */
+#nfash-content {
+  flex-grow: 1;
+  
+  display: flex;
+  flex-direction: row;
+}
 #nfdash-content h1 {
   font-size: 2em;
 }
 
+
 /* general styles */
-.flexywexy {
-  display: flex;
-  display: -webkit-flex; /* Safari 6.1+. iOS 7.1+, BB10 */
-}
 .picturebox img {
   display: block;
   margin: 0 auto;
