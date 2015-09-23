@@ -1,0 +1,24 @@
+#challenge {
+  position: absolute;
+  right: 0;
+  left: 0;
+  height: 100%;
+  background: rgba(46,139,87,0.7);
+  padding: 1em;
+
+  display: flex;
+  flex-direction: column;
+}
+
+#challenge main {
+  flex-grow: 1;
+
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+}
+
+.quest {
+  border: 1px dotted coral;
+}
+

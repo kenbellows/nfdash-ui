@@ -59,11 +59,11 @@ body {
 
 
 /* main content styles */
-#nfash-content {
-  flex-grow: 1;
-  
+#nfdash-content {
+  position: relative;
   display: flex;
   flex-direction: row;
+  flex-grow: 1;
 }
 #nfdash-content h1 {
   font-size: 2em;
