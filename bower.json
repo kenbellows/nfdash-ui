@@ -1,0 +1,25 @@
+{
+  "name": "nfdash-ui",
+  "version": "0.0.1b",
+  "homepage": "https://github.com/kenbellows/nfdash-ui",
+  "authors": [
+    "Ken Bellows <ken.bellows@live.com>"
+  ],
+  "description": "The UI frontend component of [nfdash](http://github.com/kenbellows/nfdash)",
+  "main": "dashboard.html",
+  "license": "MIT",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "angular": "~1.4.6",
+    "angular-momentjs": "~0.2.2",
+    "angular-new-router": "~0.5.3",
+    "angular-ui-bootstrap": "~0.13.4",
+    "bootstrap": "~3.3.5"
+  }
+}

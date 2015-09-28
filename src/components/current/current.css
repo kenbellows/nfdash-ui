@@ -3,7 +3,7 @@
   right: 0;
   left: 0;
   height: 100%;
-  background: rgba(46,139,87,0.7);
+  background: #fff; //rgba(46,139,87,0.7);
   padding: 1em;
 
   display: flex;
@@ -20,5 +20,6 @@
 
 .quest {
   border: 1px dotted coral;
+  height: 40%;
 }
 
