@@ -19,7 +19,8 @@
     "angular": "~1.4.6",
     "angular-momentjs": "~0.2.2",
     "angular-new-router": "~0.5.3",
-    "angular-ui-bootstrap": "~0.13.4",
-    "bootstrap": "~3.3.5"
+    "bootstrap": "~3.3.5",
+    "angular-chart.js": "~0.8.4",
+    "angular-bootstrap": "~0.13.4"
   }
 }

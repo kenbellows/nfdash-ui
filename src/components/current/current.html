@@ -5,7 +5,14 @@
     
   <main>
     <div class="quest">
-      <cjs-bar dataset="quest1"></cjs-bar>
+      <canvas id="weight"
+        class="chart chart-line"
+        chart-data="current.weight.data"
+        chart-labels="current.weight.labels"
+        ></canvas>
+      <ul>
+        <li ng-repeat="w in current.weight.data track by $index">{{w}}</li>
+      </ul>
     </div>
     <div class="quest"></div>
     <div class="quest"></div>

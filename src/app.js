@@ -1,6 +1,6 @@
 // see https://angular.github.io/router/getting-started
 
-var mainModule = angular.module('nfdash.main', ['ngNewRouter','angular-momentjs','nfdash.current']);
+var mainModule = angular.module('nfdash.main', ['ngNewRouter','angular-momentjs','nfdash.current','chart.js']);
 mainModule.config(['$momentProvider', function($moment) {
   $moment
     .asyncLoading(false)
