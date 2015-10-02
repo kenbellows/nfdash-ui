@@ -1,18 +1,22 @@
 <div id="challenge">
   <header>
-    <h1>Current Challenge: {{current.dateRange}}</h1>
+    <h1>
+      Current Challenge:
+      {{current.challenge.startDate | date : 'mediumDate' : 'EDT' }}
+      -
+      {{current.challenge.endDate | date : 'mediumDate' : 'EDT' }}
+    </h1>
   </header>
     
   <main>
     <div class="quest">
-      <canvas id="weight"
-        class="chart chart-line"
+      <canvas id="weight" class="chart chart-base"
+        chart-type="current.weight.chartType"
         chart-data="current.weight.data"
         chart-labels="current.weight.labels"
+        width="523" height="261"
+        style="width: 523px; height: 261px;"
         ></canvas>
-      <ul>
-        <li ng-repeat="w in current.weight.data track by $index">{{w}}</li>
-      </ul>
     </div>
     <div class="quest"></div>
     <div class="quest"></div>

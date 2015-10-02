@@ -1,32 +1,58 @@
 <!DOCTYPE html>
-<!-- saved from url=(0067)http://jtblin.github.io/angular-chart.js/examples/stacked-bars.html -->
-<html><head lang="en"><meta http-equiv="Content-Type" content="text/html; charset=UTF-8"><style type="text/css">@charset "UTF-8";[ng\:cloak],[ng-cloak],[data-ng-cloak],[x-ng-cloak],.ng-cloak,.x-ng-cloak,.ng-hide:not(.ng-hide-animate){display:none !important;}ng\:form{display:block;}.ng-animate-shim{visibility:hidden;}.ng-anchor{position:absolute;}</style>
+<html>
+  <head lang="en">
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    <style type="text/css">
+      @charset "UTF-8";
+      [ng\:cloak],
+      [ng-cloak],
+      [data-ng-cloak],
+      [x-ng-cloak],
+      .ng-cloak,
+      .x-ng-cloak,
+      .ng-hide:not(.ng-hide-animate){
+        display:none !important;
+      }
+      ng\:form{
+        display:block;
+      }
+      .ng-animate-shim{
+        visibility:hidden;
+      }
+      .ng-anchor{
+        position:absolute;
+      }
+        
+    </style>
   <meta charset="UTF-8">
   <title>Stacked Bar chart</title>
-  <link rel="stylesheet" href="./Stacked Bar chart_files/angular-chart.css">
-  <link href="./Stacked Bar chart_files/bootstrap.css" rel="stylesheet">
+  <link rel="stylesheet" href="/bower_components/angular-chart.js/dist/angular-chart.css">
+  <link href="/bower_components/bootstrap/dist/css/bootstrap.css" rel="stylesheet">
 </head>
 <body ng-app="examples">
 <br>
 <div class="container"></div>
 <div id="container" class="container">
-  <div class="row" ng-controller="StackedBarCtrl">
+  <div class="row" ng-controller="LineCtrl">
     <div class="col-lg-6 col-sm-12">
       <div class="panel panel-default">
         <div class="panel-heading">Stacked Bar Chart</div>
         <div class="panel-body">
-          <div class="chart-container"><canvas class="chart chart-base" chart-type="type" data="data" labels="labels" width="523" height="261" style="width: 523px; height: 261px;"></canvas></div>
+          <div class="chart-container">
+            <canvas class="chart chart-base" chart-type="type" chart-data="data" chart-labels="labels" width="523" height="261" style="width: 523px; height: 261px;"></canvas>
+          </div>
         </div>
       </div>
     </div>
   </div>
 </div>
 
-<script src="./Stacked Bar chart_files/angular.js"></script>
-<script src="./Stacked Bar chart_files/Chart.js"></script>
-<script src="./Stacked Bar chart_files/Chart.StackedBar.js"></script>
-<script src="./Stacked Bar chart_files/angular-chart.js"></script>
-<script src="./Stacked Bar chart_files/app.js"></script>
+<script src="/bower_components/angular/angular.js"></script>
+<script src="/bower_components/Chart.js/Chart.js"></script>
+<script src="/bower_components/Chart.js/src/Chart.Line.js"></script>
+<script src="/bower_components/Chart.js/src/Chart.Bar.js"></script>
+<script src="/bower_components/angular-chart.js/angular-chart.js"></script>
+<script src="app.js"></script>
 
 
 </body></html>

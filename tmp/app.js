@@ -4,9 +4,9 @@
   var app = angular.module('examples', ['chart.js']);
 
  
-  app.controller('StackedBarCtrl', function ($scope) {
+  app.controller('LineCtrl', function ($scope) {
     $scope.labels = ['Monday', 'Tuesday', 'Wednesday', 'Thursday', 'Friday', 'Saturday', 'Sunday'];
-    $scope.type = 'StackedBar';
+    $scope.type = 'Bar'; //'Line';
 
     $scope.data = [
       [65, 59, 90, 81, 56, 55, 40],

@@ -1,16 +1,12 @@
-angular.module('nfdash.current', [])
-.controller('CurrentController', ['$moment', function($moment) {
+angular.module('nfdash.current', ['chart.js'])
+.controller('CurrentController', [function() {
   this.challenge = {
     startDate: '2015-09-14',
     endDate: '2015-10-26',
   };
-  this.dateRange = (
-    $moment(this.challenge.startDate).format('dddd MMMM D') +
-    ' - ' +
-    $moment(this.challenge.endDate).format('dddd MMMM D')
-  );
   
   this.weight = {
+    chartType: 'Line',
     data: [
       "229.8",
       "229.2",
@@ -63,6 +59,7 @@ angular.module('nfdash.current', [])
     ]
   };
 
+  /*
   this.data = {
     // pushups 3x/wk
     quest1: {
@@ -82,4 +79,5 @@ angular.module('nfdash.current', [])
 
     }
   };
+  */
 }]);
