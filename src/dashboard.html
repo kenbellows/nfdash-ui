@@ -6,12 +6,12 @@
   
   <link rel="stylesheet" href="/bower_components/bootstrap/dist/css/bootstrap.min.css" />
   <link rel="stylesheet" href="dashboard.css" />
-  <link rel="stylesheet" href="components/current/current.css">
+  <link rel="stylesheet" href="components/challenge/challenge.css">
   <link rel="stylesheet" href="//fonts.googleapis.com/css?family=Roboto:400,700,300" />
   <link rel="stylesheet" href="/assets/icons/pixeden/pe-icon-7-stroke/css/pe-icon-7-stroke.css" />
   <link rel="stylesheet" href="/bower_components/angular-chart.js/dist/angular-chart.css">
 </head>
-<body ng-app="nfdash.main" ng-controller="mainController as nfmain">
+<body ng-app="nfdash.main" ng-controller="nfdash.main.mainCtrl">
     
   <!-- sidebar -->
   <div id="nfdash-sidebar">
@@ -20,20 +20,19 @@
 
   <!-- main content pane -->
   <div id="nfdash-content">
-    <div ng-viewport></div>
+    <div ng-view></div>
   </div>
 
   <script src="/bower_components/angular/angular.js"></script>
-  <script src="/bower_components/angular-new-router/dist/router.es5.js"></script>
+  <script src="/bower_components/angular-route/angular-route.js"></script>
   <script src="/bower_components/angular-bootstrap/ui-bootstrap.min.js"></script>
-  <script src="/bower_components/angular-momentjs/angular-momentjs.min.js"></script>
   <script src="/bower_components/Chart.js/Chart.js"></script>
   <script src="/bower_components/Chart.js/src/Chart.Line.js"></script>
   <script src="/bower_components/angular-chart.js/angular-chart.js"></script>
   
   <!--script src="/debug/nerdfitness-dashboard.js"></script-->
+  <script src="components/challenge/challenge.js"></script>
   <script src="app.js"></script>
-  <script src="components/current/current.js"></script>
 
 </body>
 </html>

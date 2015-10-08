@@ -6,7 +6,9 @@
  
   app.controller('LineCtrl', function ($scope) {
     $scope.labels = ['Monday', 'Tuesday', 'Wednesday', 'Thursday', 'Friday', 'Saturday', 'Sunday'];
-    $scope.type = 'Bar'; //'Line';
+    //$scope.type = 'Scale'; 
+    $scope.type = 'line'; 
+    //$scope.type = 'Bar';
 
     $scope.data = [
       [65, 59, 90, 81, 56, 55, 40],
